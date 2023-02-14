@@ -2,17 +2,23 @@
 
 int main()
 {
-    string c;
+    string c = " ";
     vector <int> a;
-    while (c[0] != '!'){
+    vector <int> b;
+    int y;
+    for(int i = 0; c != "!"; i++){
         cin >> c;
-        a.push_back(stoi(c));
-        c = ' ';
+        if (c != "!")
+            y = str_to_int(c);
+        else
+            break;
+        a.push_back(y);
     }
-    a.pop_back();
-    cout << max_position(a) << endl;
-    for (int i = 0; i < a.size(); i++){
-        cout << a[i] << endl;
+    for (int i = 0; i <= max_position(a); i++){
+        rra(a);
+    }
+    vec_to_vec(a, b, 1);
+    for (int i = 0; i < b.size(); i++){
+        cout << b[i] << endl;
     }
 }
-
