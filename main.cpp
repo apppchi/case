@@ -2,23 +2,29 @@
 
 int main()
 {
-    string c = " ";
+    string w = " ";
     vector <int> a;
     vector <int> b;
+    vector <int> c;
+    int len = a.size();
     int y;
-    for(int i = 0; c != "!"; i++){
-        cin >> c;
-        if (c != "!")
-            y = str_to_int(c);
+    for(int i = 0; w != "!"; i++){
+        cin >> w;
+        if (w != "!")
+            y = str_to_int(w);
         else
             break;
         a.push_back(y);
     }
-    for (int i = 0; i <= max_position(a); i++){
-        rra(a);
+    for (int i = 0; i < len - 1; i++){
+        for (int i = 0; i <= max_position(a); i++){
+            rra(a);
+        }
+        vec_to_vec(a, b, c);
+        a = b;
     }
-    vec_to_vec(a, b, 1);
-    for (int i = 0; i < b.size(); i++){
-        cout << b[i] << endl;
+    for (int i = 0; i < c.size(); i++){
+        cout << c[i] << endl;
     }
+
 }
