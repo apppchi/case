@@ -5,8 +5,6 @@ int main()
     string w = " ";
     vector <int> a;
     vector <int> b;
-    vector <int> c;
-    int len = a.size();
     int y;
     for(int i = 0; w != "!"; i++){
         cin >> w;
@@ -16,15 +14,16 @@ int main()
             break;
         a.push_back(y);
     }
-    for (int i = 0; i < len - 1; i++){
+    int len = a.size();
+    for (int f = 0; f < len; f++){
         for (int i = 0; i <= max_position(a); i++){
             rra(a);
+            cout << "rra" << endl;
         }
-        vec_to_vec(a, b, c);
-        a = b;
+        b.push_back(a[0]);
+        cout << "pb" << endl;
+        pa(a);
+        a.pop_back();
     }
-    for (int i = 0; i < c.size(); i++){
-        cout << c[i] << endl;
-    }
-
+    cout << '*';
 }
