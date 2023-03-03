@@ -30,7 +30,7 @@ void print_str(vector <string> l){
     HANDLE console_color;
     console_color = GetStdHandle(STD_OUTPUT_HANDLE);
     for(int i = 0; i < l.size() - 1; i++){
-        if (i > l.size() - 7){
+        if (i > l.size() - 7 && i > 2){
             int p = 1;
             SetConsoleTextAttribute(console_color, i - 1);
             cout << l[i] << endl;

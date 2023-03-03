@@ -17,3 +17,40 @@
 1677788437 source:c:\users\Александр\onedrive\Рабочий стол\sortic\function_3.cpp
 	"hh.h"
 
+1677817738 source:c:\users\sch1561-it-22\desktop\case-main\function_1.cpp
+	"hh.h"
+
+1677817738 c:\users\sch1561-it-22\desktop\case-main\hh.h
+	<iostream>
+	<vector>
+	<string>
+	<windows.h>
+
+1677828228 source:c:\users\sch1561-it-22\desktop\case-main\function_2.cpp
+	"hh.h"
+
+1677817738 source:c:\users\sch1561-it-22\desktop\case-main\function_3.cpp
+	"hh.h"
+
+1677817738 source:c:\users\sch1561-it-22\desktop\case-main\main.cpp
+	"hh.h"
+
+1677817738 source:c:\users\sch1561-it-22\desktop\sortic\function_1.cpp
+	"hh.h"
+
+1677817738 c:\users\sch1561-it-22\desktop\sortic\hh.h
+	<iostream>
+	<vector>
+	<string>
+	<windows.h>
+
+1677828228 source:c:\users\sch1561-it-22\desktop\sortic\function_2.cpp
+	"hh.h"
+
+1677817738 source:c:\users\sch1561-it-22\desktop\sortic\function_3.cpp
+	"hh.h"
+
+1677831966 source:c:\users\sch1561-it-22\desktop\sortic\main.cpp
+	"hh.h"
+	<fstream>
+

@@ -1,4 +1,5 @@
 #include "hh.h"
+#include <fstream>
 
 int main()
 {
@@ -8,6 +9,7 @@ int main()
     vector <int> b;
     vector <string> c;
     int y;
+
     for(int i = 0; w != "!"; i++){
         cin >> w;
         if (w != "!")
@@ -34,28 +36,30 @@ int main()
         }
     }
     else{
+        ofstream os;
+        os.open("111.txt");
         for (int f = 0; f < len; f++){
             for (int i = 0; i < min_position(a); i++){
                 rra(a);
-                c.push_back("rra");
+                if(os.is_open()){
+                    os << "rra" << endl;
+                }
             }
             b.push_back(a[0]);
-            c.push_back("pb");
+            os << "pb" << endl;
             ra(a);
             a.pop_back();
-
         }
         int len1 = b.size();
         for (int i = 0; i < len1; i++){
             pa(a, b);
-            c.push_back("pa");
+            os << "pa" << endl;
         }
-        c.push_back("pa");
         print_str(c);
         HANDLE console_color;
         console_color = GetStdHandle(STD_OUTPUT_HANDLE);
         SetConsoleTextAttribute(console_color, 12);
-        cout << '*';
+        os << "*";
         SetConsoleTextAttribute(console_color, 15);
     }
 }
