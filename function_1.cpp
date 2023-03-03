@@ -11,7 +11,7 @@ void rra(vector <int> &a){
     }
 }
 
-void pa(vector <int> &a){
+void ra(vector <int> &a){
     int len = a.size();
     if (len > 0){
         int k = a[0];
@@ -22,15 +22,16 @@ void pa(vector <int> &a){
     }
 }
 
-int max_position(vector <int> &a){
-    int max_i, i, max_pos;
+int min_position(vector <int> &a){
+    int i, min_pos;
+    int min_i = 2147483647;
     for (i = 0; i < a.size(); i++){
-        if (a[i] > max_i){
-            max_i = a[i];
-            max_pos = i;
+        if (a[i] <= min_i){
+            min_i = a[i];
+            min_pos = i;
         }
     }
-    return max_pos;
+    return min_pos;
 }
 
 int str_to_int(string a){
@@ -43,3 +44,4 @@ int str_to_int(string a){
     }
     return b;
 }
+
