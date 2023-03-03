@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1677779238 source:c:\users\Александр\onedrive\Рабочий стол\sortic\function_1.cpp
+	"hh.h"
+
+1677788460 c:\users\Александр\onedrive\Рабочий стол\sortic\hh.h
+	<iostream>
+	<vector>
+	<string>
+	<windows.h>
+
+1677788681 source:c:\users\Александр\onedrive\Рабочий стол\sortic\function_2.cpp
+	"hh.h"
+
+1677788796 source:c:\users\Александр\onedrive\Рабочий стол\sortic\main.cpp
+	"hh.h"
+
+1677788437 source:c:\users\Александр\onedrive\Рабочий стол\sortic\function_3.cpp
+	"hh.h"
+
